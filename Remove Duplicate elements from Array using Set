@@ -1,0 +1,24 @@
+//c++------------------------------->
+
+ std::set<int> mySet(vec.begin(), vec.end());//coping the vector into the set
+          for(int n:mySet){
+            cout<<n<<" ";
+          }
+        return 0;
+
+//java------------------------------>
+ public static void main(String[] args) {
+        // Create a List of integers
+        List<Integer> list = new ArrayList<>();
+        list.add(1);
+        list.add(2);
+        list.add(3);
+        list.add(4);
+
+        // Create a Set and copy elements from the List
+        Set<Integer> mySet = new HashSet<>(list);
+
+        // Print the Set
+        System.out.println("Set after copying from List: " + mySet);
+    }
+}
